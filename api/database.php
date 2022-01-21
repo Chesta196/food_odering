@@ -1,3 +1,3 @@
 <?php
-$conn = mysqli_connect('mysqldb','root','123','food_odering');
+$conn = mysqli_connect('localhost','root','123','food_odering');
  ?>
