@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <form method="POST">
+            <h4>Account</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name"  maxlength="20" required class="name">
+                    <i class="fas fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last name" maxlength="20" required class="name">
+                    <i class="fas fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Email Address" required class="name">
+                    <i class="fas fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Phone  Number" id="phone" maxlength="10" class="name" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <i class="fas fa-phone icon"></i>
+                </div>
+            </div>
+             <div class="input-group">
+                 <div class="input-box">
+                     <h4>Address</h4>
+                     <textarea name="address" id="address" cols="50" rows="4" class="name"></textarea> 
+                     <i class="fas fa-map-marker-alt icon"></i>
+                 </div>
+            </div>
+                 <div class="input-group">
+                     <div class="input-box">
+                         <input type="number" placeholder="Pincode" required class="name">
+                         <i class="fas fa-map-marker-alt icon"></i> 
+                     </div>
+                    </div>
+             <div class="input-group">
+                <div class="input-box">
+                    <h4>Date of Birth</h4>
+                    <input type="text" placeholder="DD" class="dob">
+                    <input type="text" placeholder="MM" class="dob">
+                    <input type="text" placeholder="YYYY" class="dob">
+                </div>
+                <div class="input-box"> 
+                    <h4> Gender</h4>
+                     <input type="radio" id="b1" name="gender" checked class="radio">
+                     <label for="b1"><small>Male</small> </label>
+                     <input type="radio" id="b2" name="gender" checked class="radio">
+                     <label for="b2"><small>Female</small></label>
+                </div>
+             </div>
+             <div class="input-group">
+                 <div class="input-box">
+                     <h4>Payment Details</h4>
+                     <input type="radio" name="Pay" id="bc1" checked class="radio">
+                     <label for="bc1"><span><small>Credit Card</small> </span></label>
+                     <input type="radio" name="Pay" id="bc2" checked class="radio">
+                     <label for="bc2"><span><small>GPay</small> </span></label>
+                     <input type="radio" name="Pay" id="bc3" checked class="radio">
+                     <label for="bc3"><span><small>Cash on Delivery</small></span></label>
+                 </div>
+             </div>
+             <div class="input-group">
+                <div class="input-box">
+                    <h4>Card Details</h4>
+                <input type="tel" placeholder="Card Number" required class=" name">
+                <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                <input type="tel" placeholder="Card CVC" required class=" name">
+                <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                   <select>
+                       <option> jan  </option>
+                       <option> feb </option>
+                       <option> mar  </option>
+                       <option> apr  </option>
+                       <option> may  </option>
+                       <option> jun </option>
+                       <option> jul  </option>
+                       <option> aug  </option>
+                       <option> sept  </option>
+                       <option> oct </option>
+                       <option> nov  </option>
+                       <option> dec  </option>
+                   </select>
+                   <select>
+                    <option> 2020</option>
+                    <option> 2021</option>
+                    <option> 2022</option>
+                    <option> 2023</option>
+                </select>
+                </div>
+            </div> 
+            <div class="input-group">
+                <div class="input-box">
+                 <button type="submit">Pay Now</button>
+                </div>
+            </div>   
+        </form>           
+    </div>
+</body>
+</html>

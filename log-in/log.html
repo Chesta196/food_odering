@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <form  action="login.php" method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="User ID" required class="name" name="user id">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required class="name" name="password">
+                    <i class="fas fa-key icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit">Login</button></div></br>
+                    <a href="#"><small><small>Forget Password</small></small> </a><br>
+        <small><small>New User?</small><small><a href="regi.html">Register Here</a></small></small> 
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
