@@ -55,14 +55,14 @@
                                                      
         return $events;
     }
-    function makeArray($array){
+    function makeArray($array,$idindex,$nameindex){
         $data= array();
         
         foreach ($array as $key => $value) {
             
             // foreach ($value as $key => $val) {
                 
-                $data[$value['id']] = $value['name'];
+                $data[$value[$idindex]] = $value[$nameindex];
             // }
         }
         

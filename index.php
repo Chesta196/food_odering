@@ -1,4 +1,12 @@
 
+<?php 
+if(!isset($_SESSION)){
+session_start();
+}
+if(isset($_SESSION['email']) || $_SESSION['email']!=''){
+header('Location: welcome.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
